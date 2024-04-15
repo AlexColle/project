@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.username">avnadmin</property>
+		<property name="hibernate.connection.password">AVNS_FKeO4BSk_XXyPu_gyiD</property>
+		<property name="hibernate.connection.url">jdbc:mysql://mysql-3dbeaeb7-elitesoftwarehouse-a465.a.aivencloud.com:11531/defaultdb</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+
+		<!--********************* AUTO CREATE DB TABLES ******************************** -->
+		<property name="hibernate.hbm2ddl.auto">create</property>
+
+		<!-- MAPPING delle RISORSE -->
+		<!-- <mapping resource="resource/db/PersonaTest.hbm.xml" /> -->
+		<!-- In alternativa si può specificare il file classe es: <mapping class="model.session.Docente"/> -->
+		<mapping class="model.session.Docente" />
+
+	</session-factory>
+</hibernate-configuration>

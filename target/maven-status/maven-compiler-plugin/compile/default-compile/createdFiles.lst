@@ -1,0 +1,8 @@
+model\session\Docente.class
+controller\CtrlMain.class
+model\dao\AbstractService.class
+model\dao\DocenteService.class
+util\HibernateUtil.class
+controller\CtrlArchivioDocente.class
+model\dao\AbstractDAO.class
+model\dao\DocenteDAO.class
